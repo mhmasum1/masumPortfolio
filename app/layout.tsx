@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   title: "Mahmudul Hasan Masum | MERN Developer",
   description:
     "Junior Full Stack MERN Developer building modern, scalable web applications with React, Node.js, Express, and MongoDB.",
-  metadataBase: new URL("https://your-domain.com"),
   openGraph: {
     title: "Mahmudul Hasan Masum | MERN Developer",
     description:
@@ -24,6 +23,7 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
 
 export default function RootLayout({
   children,
