@@ -5,6 +5,9 @@ import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import About from "../components/About";
+import Education from "@/components/Education";
+import Certifications from "@/components/Certifications";
 
 export default function Home() {
   return (
@@ -19,8 +22,11 @@ export default function Home() {
 
       <div className="mx-auto max-w-5xl px-5">
         <Hero />
+        <About />
         <Skills />
         <Projects />
+        <Education />
+        <Certifications />
         <Experience />
         <Contact />
         <Footer />

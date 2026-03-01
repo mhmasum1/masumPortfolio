@@ -16,7 +16,7 @@ const item = {
 export default function Contact() {
     return (
         <section id="contact" className="py-16">
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-6xl mx-auto px-4">
                 <Reveal>
                     <h2 className="text-3xl font-semibold">📫 Contact</h2>
                     <p className="mt-2 text-zinc-300">
@@ -29,8 +29,9 @@ export default function Contact() {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.2 }}
-                    className="mt-8 grid gap-4 sm:grid-cols-3"
+                    className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
                 >
+                    {/* Email */}
                     <motion.a
                         variants={item}
                         href="mailto:mhmasum231@gmail.com"
@@ -40,6 +41,29 @@ export default function Contact() {
                         <p className="mt-1 font-medium">mhmasum231@gmail.com</p>
                     </motion.a>
 
+                    {/* Phone */}
+                    <motion.a
+                        variants={item}
+                        href="tel:+8801761190107"
+                        className="rounded-2xl border border-zinc-800 p-6 bg-zinc-900/40 hover:bg-zinc-900 transition"
+                    >
+                        <p className="text-sm text-zinc-400">Phone</p>
+                        <p className="mt-1 font-medium">01761190107</p>
+                    </motion.a>
+
+                    {/* WhatsApp */}
+                    <motion.a
+                        variants={item}
+                        href="https://wa.me/8801761190107"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="rounded-2xl border border-zinc-800 p-6 bg-zinc-900/40 hover:bg-zinc-900 transition"
+                    >
+                        <p className="text-sm text-zinc-400">WhatsApp</p>
+                        <p className="mt-1 font-medium">Chat on WhatsApp</p>
+                    </motion.a>
+
+                    {/* LinkedIn */}
                     <motion.a
                         variants={item}
                         href="https://www.linkedin.com/in/hasanmasum"
@@ -51,6 +75,7 @@ export default function Contact() {
                         <p className="mt-1 font-medium">/in/hasanmasum</p>
                     </motion.a>
 
+                    {/* GitHub */}
                     <motion.a
                         variants={item}
                         href="https://github.com/mhmasum1"
@@ -62,11 +87,13 @@ export default function Contact() {
                         <p className="mt-1 font-medium">mhmasum1</p>
                     </motion.a>
 
+                    {/* Resume */}
                     <motion.a
                         variants={item}
                         href="/cv/Mahmudul_Hasan_Masum_CV.pdf"
                         target="_blank"
-                        className="rounded-2xl border border-zinc-800 p-6 bg-zinc-900/40 hover:bg-zinc-900 transition sm:col-span-3"
+                        rel="noreferrer"
+                        className="rounded-2xl border border-zinc-800 p-6 bg-zinc-900/40 hover:bg-zinc-900 transition"
                     >
                         <p className="text-sm text-zinc-400">Resume</p>
                         <p className="mt-1 font-medium">Download CV</p>
